@@ -1,38 +1,94 @@
+/*
+=============== 
+Global Styles
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+=============== 
+Custom
+===============
+*/
+
+
+.theme {
+  --brightblue: hsl(220, 98%, 61%);
+  --listbg: hsl(0, 0%, 98%);
+  --bg: rgb(204, 204, 204);
+  --text: #00393B;
+  --secondary: #F48D79;
+  --highlight: #017075;
+  --softbg: hsl(233, 11%, 84%);
+  --darkgray: hsl(236, 9%, 61%);
+  background-color: var(--bg);
+  background-repeat: no-repeat;
+}
+
+h1{
+  color: var(--text);
+  font-weight: 700;
+}
+
+h3{
+  color: var(--text);
+  font-weight: 700;
+}
+
+h4{
+  color: var(--text);
+  font-weight: 400;
+}
+
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+  padding-top: 5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title::after{
+  content: "";
+  text-align: center;
+  display: block;
+  width: 20%;
+  padding-top: 2px;
+  border-bottom: 2px solid salmon;
+  margin:auto;
+  margin-bottom: 128px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.section {
+  width: 100vw;
+  margin: auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* Loading animation */
+.loading {
+  margin: auto;
+  animation: loadingAnimation 1s linear infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes loadingAnimation {
+  0% {
+    opacity: 0
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    opacity: 1
   }
 }
+

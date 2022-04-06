@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Index
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. [Intro](#intro)
 
-## Available Scripts
+2. [Project Setup](#setup)
 
-In the project directory, you can run:
+3. [Usage](#usage)
+    1. [Download](#download)
+    2. [Placeholders](#placeholders)
+    3. [Built with](#build)
 
-### `npm start`
+4. [Authors](#authors)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+5. [License](#license)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Intro <a id="intro"></a>
 
-### `npm run build`
+This project has been created as a reusable React library that can be easily customized and recreated in various kinds of projects. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+It includes a variety of common-used templates, such as sliders, tabs, sidebars, galleries, navbars, etc. The main goal is to have a simple and useful repository that will be expanded with more features.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Project setup<a id="setup"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Please check link for more info.
 
-### `npm run eject`
+To install dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Usage<a id="usage"></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Download<a id="download"></a>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+There are a few options:
 
-## Learn More
+You can clone the project, remove the parts that you don´t want to use, customize the ones that you want and import them into App.js. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To clone the project:
+```
+git clone https://github.com/BdeVallejo/react-library
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can also create your own React project with [Create React App](https://github.com/facebook/create-react-app) and then copy and paste the raw code of the components that you wish to use. Next to each component there a css folder with the specific css code.
 
-### Code Splitting
+## Placeholders<a id="placeholders"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+In the folder `/utils ` there is a file that contains all the texts and files used as placeholders. You can edit them to suit your needs.
 
-### Analyzing the Bundle Size
+Alternatively, all components that use those placeholders include a `fetchText() ` function that you can use to fetch data from an API or similar.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+A loading indicator has been added as well for this purpose.
 
-### Making a Progressive Web App
+## Built With<a id="built"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* React.js
+ 
 
-### Advanced Configuration
+# Authors<a id="authors"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* **Bruno de Vallejo (alias [BdeVallejo](https://github.com/BdeVallejo))**
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# License<a id="license"></a>
 
-### `npm run build` fails to minify
+This project is licensed under the MIT License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+

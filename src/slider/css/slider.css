@@ -1,0 +1,99 @@
+/*
+=============== 
+SLIDER
+===============
+*/
+
+.section-center {
+margin: 0 auto;
+width: 80vw;
+/* have to have a height */
+height: 420px;
+max-width: 800px;
+text-align: center;
+position: relative;
+display: flex;
+overflow: hidden;
+}
+
+.person-img {
+border-radius: 50%;
+margin-bottom: 24px;
+width: 200px;
+height: 200px;
+object-fit: cover;
+border: 1px solid var(--secondary);
+box-shadow: var(--highlight);
+}
+
+article h4 {
+text-transform: uppercase;
+color: var(--text);
+margin-bottom: 12px;
+font-weight: bolder;
+}
+
+.text {
+max-width: 480px;
+margin: 0 auto;
+margin-top: 24px;
+line-height: 2;
+color: var(--text);
+}
+
+.prev,
+.next {
+position: absolute;
+top: 200px;
+transform: translateY(-50%);
+color: var(--text);
+background-color: transparent;
+width: 72px;
+height: 24px;
+display: grid;
+place-items: center;
+border-color: transparent;
+font-size: 24px;
+cursor: pointer;
+transition: none;
+}
+
+.prev:hover,
+.next:hover {
+color: var(--secondary);
+}
+
+.prev {
+left: 0;
+}
+
+.next {
+right: 0;
+}
+
+
+/* Articles are in 3 columns: first one is the last-shown card.
+The middle one is the active one and the right is all the rest.
+We use flex in section-center, so they´re all in the same row
+*/
+
+article {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+transition: none;
+}
+
+article.activeSlide {
+opacity: 1;
+transform: translateX(0);
+}
+article.lastSlide {
+transform: translateX(-100%);
+}
+article.nextSlide {
+transform: translateX(100%);
+}
